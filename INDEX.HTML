@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery Journey Navigator</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(50, 50, 200, 1) 0%, rgba(0, 0, 0, 1) 100%);
+            animation: backgroundAnimation 20s infinite alternate;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        #search-container {
+            margin-top: 20px;
+        }
+
+        #search-input {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="content">
+            <h1>Welcome to the Recovery Journey Navigator</h1>
+            <p>In a world where hope seems lost, where struggles seem insurmountable, and where darkness threatens to consume, there is still a glimmer of light. Here, in our community, we extend our hands to those who seek refuge, understanding, and support. Our mission is simple: to humanize addiction, to uplift souls, and to guide individuals on their journey to recovery. You are not alone. Together, we will walk this path towards healing and hope.</p>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Enter location...">
+                <button id="search-btn">Search</button>
+            </div>
+            <p>If you need immediate assistance, please call the SAMHSA National Helpline for Drug Addiction: <a href="tel:1-800-662-4357">1-800-662-4357</a></p>
+            <p>Visit our YouTube channel for more videos: <a href="https://www.youtube.com/channel/your-channel">On the Road of Recovery</a></p>
+        </div>
+    </div>
+</body>
+</html>
